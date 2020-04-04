@@ -1,5 +1,12 @@
 # homebridge-camera-ffmpeg-omx
 
+Forked from legotheboss who forked it from Khaos.
+legotheboss did a great job optimizing it for Raspberry Pi but Khaos has added features to it since.
+Adding features:
+- Homekit accessory fields such as serial number and manufacturer
+- The ability to sustain the stream for >1-2 minutes
+- Customizable options: Packetsize, bitrate, vcodec (default h264_omx)
+
 ffmpeg plugin for [Homebridge](https://github.com/nfarina/homebridge). Optimized for Rapsberry Pi via GPU encoding.
 
 ## Installation
