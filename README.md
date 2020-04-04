@@ -42,5 +42,3 @@ ffmpeg plugin for [Homebridge](https://github.com/nfarina/homebridge). Optimized
         }
       ]
     }
-
-Incidentally, check [iSpyConnect's camera database](https://www.ispyconnect.com/sources.aspx) to find likely protocols and URLs to try with your camera.
