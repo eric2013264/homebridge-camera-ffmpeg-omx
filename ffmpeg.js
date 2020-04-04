@@ -5,18 +5,21 @@ var crypto = require('crypto');
 var fs = require('fs');
 var ip = require('ip');
 var spawn = require('child_process').spawn;
+var pathToFfmpeg = require('ffmpeg-for-homebridge');
+var drive = require('./drive').drive;
 
 module.exports = {
   FFMPEG: FFMPEG
 };
 
-function FFMPEG(hap, cameraConfig) {
+function FFMPEG(hap, cameraConfig, videoProcessor) {
   uuid = hap.uuid;
   Service = hap.Service;
   Characteristic = hap.Characteristic;
   StreamController = hap.StreamController;
 
   var ffmpegOpt = cameraConfig.videoConfig;
+  this.videoProcessor = videoProcessor || pathToFfmpeg || 'ffmpeg';
   this.name = cameraConfig.name;
   if (!ffmpegOpt.source) {
     throw new Error("Missing source for camera.");
@@ -264,7 +267,7 @@ FFMPEG.prototype.handleStreamRequest = function(request) {
         //console.log(ffmpegCommand);
         console.log("Started streaming video from " + this.name + " with " + width + "x" + height + "@" + bitrate + "kBit|" + fps + "fps|packet size:" + packetsize + " to " + sessionInfo["address"]);
 
-        let ffmpeg = spawn('ffmpeg', ffmpegCommand.split(' '), {env: process.env});
+        let ffmpeg = spawn(this.videoProcessor, ffmpegCommand.split(' '), {env: process.env});
         // needed or else stream closes within 1-2 minutes
         ffmpeg.stderr.on('data', function(data) {
           // Do not log to the console if debugging is turned off
