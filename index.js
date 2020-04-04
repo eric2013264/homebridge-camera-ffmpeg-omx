@@ -68,6 +68,17 @@ ffmpegPlatform.prototype.didFinishLaunching = function() {
       }
 
       cameraAccessory.context.log = self.log;
+      
+      	if (cameraConfig.motion) {		      
+          var cameraSource = new FFMPEG(hap, cameraConfig, videoProcessor);
+          var button = new Service.Switch(cameraName);		
+          cameraAccessory.addService(button);		
+          var motion = new Service.MotionSensor(cameraName);		
+          cameraAccessory.addService(motion);		
+          button.getCharacteristic(Characteristic.On)		
+            .on('set', _Motion.bind(cameraAccessory));		
+      }
+      
       var cameraSource = new FFMPEG(hap, cameraConfig, videoProcessor);
       cameraAccessory.configureCameraSource(cameraSource);
       configuredAccessories.push(cameraAccessory);
@@ -75,4 +86,12 @@ ffmpegPlatform.prototype.didFinishLaunching = function() {
 
     self.api.publishCameraAccessories("Camera-ffmpeg-omx", configuredAccessories);
   }
+};		
+function _Motion(on, callback) {		
+  this.context.log("Setting %s Motion to %s", this.displayName, on);		
+  this.getService(Service.MotionSensor).setCharacteristic(Characteristic.MotionDetected, (on ? 1 : 0));		
+  if (on) {		
+    setTimeout(_Reset.bind(this), 5000);		
+  }		  }
+  callback();		
 }
