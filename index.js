@@ -14,6 +14,7 @@ module.exports = function(homebridge) {
 
 function ffmpegPlatform(log, config, api) {
   var self = this;
+  var videoProcessor = self.config.videoProcessor || 'ffmpeg';
   self.log = log;
 
   self.config = config || {};
@@ -66,7 +67,7 @@ ffmpegPlatform.prototype.didFinishLaunching = function() {
       }
 
       cameraAccessory.context.log = self.log;
-      var cameraSource = new FFMPEG(hap, cameraConfig);
+      var cameraSource = new FFMPEG(hap, cameraConfig, videoProcessor);
       cameraAccessory.configureCameraSource(cameraSource);
       configuredAccessories.push(cameraAccessory);
     });
