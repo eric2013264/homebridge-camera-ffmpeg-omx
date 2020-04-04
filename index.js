@@ -5,6 +5,8 @@ var FFMPEG = require('./ffmpeg').FFMPEG;
 module.exports = function(homebridge) {
   Accessory = homebridge.platformAccessory;
   hap = homebridge.hap;
+  Service = hap.Service;
+  Characteristic = hap.Characteristic;
   UUIDGen = homebridge.hap.uuid;
 
   homebridge.registerPlatform("homebridge-camera-ffmpeg-omx", "Camera-ffmpeg-omx", ffmpegPlatform, true);
@@ -12,8 +14,8 @@ module.exports = function(homebridge) {
 
 function ffmpegPlatform(log, config, api) {
   var self = this;
-
   self.log = log;
+
   self.config = config || {};
 
   if (api) {
@@ -49,7 +51,22 @@ ffmpegPlatform.prototype.didFinishLaunching = function() {
 
       var uuid = UUIDGen.generate(cameraName);
       var cameraAccessory = new Accessory(cameraName, uuid, hap.Accessory.Categories.CAMERA);
-      var cameraSource = new FFMPEG(hap, videoConfig);
+      var cameraAccessoryInfo = cameraAccessory.getService(Service.AccessoryInformation);
+      if (cameraConfig.manufacturer) {
+        cameraAccessoryInfo.setCharacteristic(Characteristic.Manufacturer, cameraConfig.manufacturer);
+      }
+      if (cameraConfig.model) {
+        cameraAccessoryInfo.setCharacteristic(Characteristic.Model, cameraConfig.model);
+      }
+      if (cameraConfig.serialNumber) {
+        cameraAccessoryInfo.setCharacteristic(Characteristic.SerialNumber, cameraConfig.serialNumber);
+      }
+      if (cameraConfig.firmwareRevision) {
+        cameraAccessoryInfo.setCharacteristic(Characteristic.FirmwareRevision, cameraConfig.firmwareRevision);
+      }
+
+      cameraAccessory.context.log = self.log;
+      var cameraSource = new FFMPEG(hap, cameraConfig);
       cameraAccessory.configureCameraSource(cameraSource);
       configuredAccessories.push(cameraAccessory);
     });
