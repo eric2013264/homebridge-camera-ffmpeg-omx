@@ -36,7 +36,8 @@ ffmpegPlatform.prototype.configureAccessory = function(accessory) {
 
 ffmpegPlatform.prototype.didFinishLaunching = function() {
   var self = this;
-
+  var videoProcessor = self.config.videoProcessor || 'ffmpeg';
+  
   if (self.config.cameras) {
     var configuredAccessories = [];
 
