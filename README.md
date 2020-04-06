@@ -1,12 +1,12 @@
 # homebridge-camera-ffmpeg-omx
 
 [![npm](https://img.shields.io/npm/v/homebridge-camera-ffmpeg-omx?style=for-the-badge)](https://www.npmjs.com/package/homebridge-camera-ffmpeg-omx)
-[![npm](https://img.shields.io/npm/dt/homebridge-smartthings-v2?style=for-the-badge)](https://www.npmjs.com/package/homebridge-smartthings-v2)
-![npm](https://img.shields.io/npm/dw/homebridge-smartthings-v2?style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/tonesto7/homebridge-smartthings-v2?style=for-the-badge)
+[![npm](https://img.shields.io/npm/dt/homebridge-camera-ffmpeg-omx?style=for-the-badge)](https://www.npmjs.com/package/homebridge-camera-ffmpeg-omx)
+![npm](https://img.shields.io/npm/dw/homebridge-camera-ffmpeg-omx?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/legotheboss/homebridge-camera-ffmpeg-omx?style=for-the-badge)
 
-[![GitHub issues](https://img.shields.io/github/issues/tonesto7/homebridge-smartthings-v2?style=for-the-badge)](https://github.com/tonesto7/homebridge-smartthings-v2/issues)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/tonesto7/homebridge-smartthings-v2?style=for-the-badge)](https://github.com/tonesto7/homebridge-smartthings-v2/pulls)
+[![GitHub issues](https://img.shields.io/github/issues/legotheboss/homebridge-camera-ffmpeg-omx?style=for-the-badge)](https://github.com/legotheboss/homebridge-camera-ffmpeg-omx/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/legotheboss/homebridge-camera-ffmpeg-omx?style=for-the-badge)](https://github.com/legotheboss/homebridge-camera-ffmpeg-omx/pulls)
 
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/tonesto7/homebridge-smartthings-v2/master?style=for-the-badge)
 ![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/tonesto7/homebridge-smartthings-v2?style=for-the-badge)
