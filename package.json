@@ -1,0 +1,50 @@
+{
+  "_from": "homebridge-camera-ffmpeg-omx@0.0.3",
+  "_id": "homebridge-camera-ffmpeg-omx@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-7knYKrHo7g7TZeX6diG1ip2IzU0=",
+  "_location": "/homebridge-camera-ffmpeg-omx",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "homebridge-camera-ffmpeg-omx@0.0.3",
+    "name": "homebridge-camera-ffmpeg-omx",
+    "escapedName": "homebridge-camera-ffmpeg-omx",
+    "rawSpec": "0.0.3",
+    "saveSpec": null,
+    "fetchSpec": "0.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/homebridge-camera-ffmpeg-omx/-/homebridge-camera-ffmpeg-omx-0.0.3.tgz",
+  "_shasum": "ee49d82ab1e8ee0ed365e5fa7621b58a9d88cd4d",
+  "_spec": "homebridge-camera-ffmpeg-omx@0.0.3",
+  "_where": "/home/hoobs/.hoobs",
+  "bugs": {
+    "url": "http://github.com/legotheboss/homebridge-camera-ffmpeg-omx/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "ip": "^1.1.3"
+  },
+  "deprecated": false,
+  "description": "ffmpeg plugin for homebridge: https://github.com/nfarina/homebridge",
+  "engines": {
+    "homebridge": ">=0.4.5",
+    "node": ">=5.0.0"
+  },
+  "homepage": "https://github.com/legotheboss/homebridge-camera-ffmpeg-omx#readme",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "license": "ISC",
+  "name": "homebridge-camera-ffmpeg-omx",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/legotheboss/homebridge-camera-ffmpeg-omx.git"
+  },
+  "version": "0.0.3"
+}
