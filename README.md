@@ -8,10 +8,10 @@
 [![GitHub issues](https://img.shields.io/github/issues/legotheboss/homebridge-camera-ffmpeg-omx?style=for-the-badge)](https://github.com/legotheboss/homebridge-camera-ffmpeg-omx/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/legotheboss/homebridge-camera-ffmpeg-omx?style=for-the-badge)](https://github.com/legotheboss/homebridge-camera-ffmpeg-omx/pulls)
 
-![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/tonesto7/homebridge-smartthings-v2/master?style=for-the-badge)
-![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/tonesto7/homebridge-smartthings-v2?style=for-the-badge)
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/legotheboss/homebridge-camera-ffmpeg-omx/master?style=for-the-badge)
+![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/legotheboss/homebridge-camera-ffmpeg-omx?style=for-the-badge)
 
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/tonesto7/homebridge-smartthings-v2/Node-CI/master?style=for-the-badge)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/legotheboss/homebridge-camera-ffmpeg-omx/Node-CI/master?style=for-the-badge)
 
 [![Donate](https://img.shields.io/badge/donate-paypal-green.svg?style=for-the-badge)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVFJTG8H86SK8&source=url)
 
