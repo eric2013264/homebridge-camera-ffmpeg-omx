@@ -1,6 +1,6 @@
 # homebridge-camera-ffmpeg-omx
 
-Homebridge plugin for streaming its camera feed developed by KhaosT and optimized for the Raspberry Pi's GPU by legotheboss.
+Homebridge plugin for streaming a camera feed. Developed by KhaosT and optimized for the Raspberry Pi's GPU by legotheboss.
 
 Adding certain features back to optimized version that are present in KhaosT's newer versions.
 Tweaking small things.
