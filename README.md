@@ -1,5 +1,24 @@
 # homebridge-camera-ffmpeg-omx
 
+[![npm](https://img.shields.io/npm/v/homebridge-smartthings-v2?style=for-the-badge)](https://www.npmjs.com/package/homebridge-smartthings-v2)
+[![npm](https://img.shields.io/npm/dt/homebridge-smartthings-v2?style=for-the-badge)](https://www.npmjs.com/package/homebridge-smartthings-v2)
+![npm](https://img.shields.io/npm/dw/homebridge-smartthings-v2?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/tonesto7/homebridge-smartthings-v2?style=for-the-badge)
+
+[![GitHub issues](https://img.shields.io/github/issues/tonesto7/homebridge-smartthings-v2?style=for-the-badge)](https://github.com/tonesto7/homebridge-smartthings-v2/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/tonesto7/homebridge-smartthings-v2?style=for-the-badge)](https://github.com/tonesto7/homebridge-smartthings-v2/pulls)
+
+![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/tonesto7/homebridge-smartthings-v2/master?style=for-the-badge)
+![Known Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/tonesto7/homebridge-smartthings-v2?style=for-the-badge)
+
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/tonesto7/homebridge-smartthings-v2/Node-CI/master?style=for-the-badge)
+
+[![Donate](https://img.shields.io/badge/donate-paypal-green.svg?style=for-the-badge)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVFJTG8H86SK8&source=url)
+
+## About
+<p align="left">
+  <img width="100" height="100" src="https://raw.githubusercontent.com/tonesto7/homebridge-smartthings-v2/master/images/hb_tonesto7.png">
+    
 Homebridge plugin for streaming a camera feed. Developed by KhaosT and optimized for the Raspberry Pi's GPU by legotheboss.
 
 Adding certain features back to optimized version that are present in KhaosT's newer versions.
