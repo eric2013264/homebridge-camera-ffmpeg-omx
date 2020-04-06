@@ -1,6 +1,6 @@
 # homebridge-camera-ffmpeg-omx
 
-[![npm](https://img.shields.io/npm/v/homebridge-smartthings-v2?style=for-the-badge)](https://www.npmjs.com/package/homebridge-smartthings-v2)
+[![npm](https://img.shields.io/npm/v/homebridge-camera-ffmpeg-omx?style=for-the-badge)](https://www.npmjs.com/package/homebridge-camera-ffmpeg-omx)
 [![npm](https://img.shields.io/npm/dt/homebridge-smartthings-v2?style=for-the-badge)](https://www.npmjs.com/package/homebridge-smartthings-v2)
 ![npm](https://img.shields.io/npm/dw/homebridge-smartthings-v2?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/tonesto7/homebridge-smartthings-v2?style=for-the-badge)
