@@ -21,8 +21,7 @@
     
 Homebridge plugin for streaming a camera feed. Developed by KhaosT and optimized for the Raspberry Pi's GPU by legotheboss.
 
-Adding certain features back to optimized version that are present in KhaosT's newer versions.
-Tweaking small things.
+Here I'm adding certain features from KhaosT's newer version back to the Rasp Pi optimized version and tweaking a few features.
 
 ## Updates
 1. Camera now has Homekit accessory fields such as serial number, manufacturer, and firmware version that can be modified from the config file.
